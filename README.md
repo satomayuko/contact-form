@@ -43,6 +43,12 @@ DB_PASSWORD=laravel_pass
 docker-compose exec php php artisan migrate
 ```
 
+### 🔑 アプリケーションキーの生成
+アプリケーションキーを生成し .env に自動設定します：
+```
+docker-compose exec php php artisan key:generate
+```
+
 ### 🗺 ER図（Entity Relationship Diagram）
 
 ![ER図](./ERD.png)
